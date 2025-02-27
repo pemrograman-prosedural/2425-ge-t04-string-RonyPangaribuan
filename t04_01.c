@@ -17,8 +17,6 @@ int string_to_int(const char *str) {
   
   int main() {
   char input[MAX_LENGTH + 1]; 
-  
-     
  
   fgets(input, sizeof(input), stdin);
   
