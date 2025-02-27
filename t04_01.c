@@ -1,19 +1,18 @@
 // 12S24005 - Mia Nathania Sibuea
 // 12S24040 - Rony Reynaldy Pangaribuan
 
-  #include <stdio.h>
-  #include <string.h>
+#include <stdio.h>
+#include <string.h>
   
-  #define MIN_LENGTH 3
-  #define MAX_LENGTH 60
+#define MIN_LENGTH 3
+#define MAX_LENGTH 60
   
-  // Fungsi untuk mengonversi string ke integer
-  int string_to_int(const char *str) {
-      int result = 0;
-      for (int i = 0; i < 3; i++) {
-          result = result * 10 + (str[i] - '0'); 
-      }
-      return result;
+int string_to_int(const char *str) {
+  int result = 0;
+    for (int i = 0; i < 3; i++) {
+      result = result * 10 + (str[i] - '0'); 
+  }
+  return result;
   }
   
   int main() {
@@ -38,7 +37,6 @@
     strncpy(ascii_str, input + i, 3);
     ascii_str[3] = '\0'; 
   
-          
     int ascii_value = string_to_int(ascii_str);
     printf("%c", (char)ascii_value);
       }

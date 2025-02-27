@@ -15,7 +15,6 @@ int main() {
     fgets(input, sizeof(input), stdin);
 
     input[strcspn(input, "\n")] = 0;
-
     
     int length = strlen(input);
     if (length < MIN_LENGTH || length > MAX_LENGTH) {
