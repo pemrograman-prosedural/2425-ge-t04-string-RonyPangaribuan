@@ -11,7 +11,7 @@ int main() {
     char input[MAX_LENGTH + 1]; 
 
   
-    printf("Masukkan teks (1-20 karakter): ");
+
     fgets(input, sizeof(input), stdin);
 
     input[strcspn(input, "\n")] = 0;

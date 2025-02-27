@@ -19,7 +19,7 @@ int string_to_int(const char *str) {
   char input[MAX_LENGTH + 1]; 
   
      
-  printf("Masukkan Icarus Message (3-60 karakter): ");
+ 
   fgets(input, sizeof(input), stdin);
   
     
